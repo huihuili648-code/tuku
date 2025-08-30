@@ -46,13 +46,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     lightbox.addEventListener('click', (e) => {
         if (e.target === lightbox) {
-                    lightbox.classList.remove('active');
-                }
-            });
+            lightbox.classList.remove('active');
+        }
+    });
 
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-                    lightbox.classList.remove('active');
-                }
-            });
-        });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            lightbox.classList.remove('active');
+        }
+    });
+});
